@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
-    "build:eleventy": "eleventy --pathprefix 'eleventy_blog'",
+    "build:eleventy": "eleventy",
     "build:webpack": "webpack",
-    "clean": "rm -rf docs",
+    "clean": "rm -rf _site",
     "start": "npm-run-all clean -p build:* -p start:*",
     "start:eleventy": "eleventy --serve --quiet",
     "start:webpack": "webpack --watch"
