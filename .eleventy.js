@@ -15,7 +15,7 @@ module.exports = (config) => {
   config.setDataDeepMerge(true);
 
   return {
-    pathPrefix: "/eleventy-blog",
+    pathPrefix: "/eleventy_blog",
 
     dir: {
       input: "src",

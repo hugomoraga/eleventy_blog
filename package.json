@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-blog",
+  "name": "eleventy_blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,10 @@
     "clean": "rm -rf dist",
     "start": "npm-run-all clean -p build:* -p start:*",
     "start:eleventy": "eleventy --serve --quiet",
-    "start:webpack": "webpack --watch"
+    "start:webpack": "webpack --watch",
+    "deploy": "npm-run-all build:* gh-pages",
+    "gh-pages": "gh-pages -d dist"
+
   },
   "author": "",
   "license": "ISC",
