@@ -9,17 +9,17 @@ module.exports = (config) => {
   });
   config.setTemplateFormats(["jpg", "png", "webp", "md", "njk"]);
   config.setBrowserSyncConfig({
-    files: ["_site/**/*"],
+    files: ["dist/**/*"],
     open: true,
   });
   config.setDataDeepMerge(true);
 
   return {
-    pathPrefix: "/eleventy-blog/",
+    pathPrefix: "/eleventy-blog",
 
     dir: {
       input: "src",
-      output: "_site",
+      output: "dist",
     },
   };
 };
