@@ -13,7 +13,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, "dist", "assets"),
+    path: path.resolve(__dirname, "docs", "assets"),
     filename: "main.bundle.js",
   },
   plugins: [

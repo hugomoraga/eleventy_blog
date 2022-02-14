@@ -9,7 +9,7 @@ module.exports = (config) => {
   });
   config.setTemplateFormats(["jpg", "png", "webp", "md", "njk"]);
   config.setBrowserSyncConfig({
-    files: ["dist/**/*"],
+    files: ["docs/**/*"],
     open: true,
   });
   config.setDataDeepMerge(true);
@@ -19,7 +19,7 @@ module.exports = (config) => {
 
     dir: {
       input: "src",
-      output: "dist",
+      output: "docs",
     },
   };
 };
